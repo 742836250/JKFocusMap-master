@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>JKFocusMap-master.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8F5E9FA01C38F3930035C87A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F5E9FB91C38F3940035C87A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F5E9FC41C38F3940035C87A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
