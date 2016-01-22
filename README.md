@@ -1,2 +1,2 @@
 # JKFocusMap-master
-SHIYONG FANG FA RU XIA
+基于UICollectionView 做的一款轮播图
