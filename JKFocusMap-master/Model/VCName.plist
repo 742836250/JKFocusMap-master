@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>view load JKFocusMap</key>
+		<string>TypeFirstVC</string>
+	</dict>
+	<dict>
+		<key>cell load JKFocusMap</key>
+		<string>TypeSecondVC</string>
+	</dict>
+	<dict>
+		<key>header load JKFocusMap</key>
+		<string>TypeThirdVC</string>
+	</dict>
+</array>
+</plist>

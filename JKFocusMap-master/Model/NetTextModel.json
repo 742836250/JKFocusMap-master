@@ -1,0 +1,43 @@
+
+
+{
+    "data":
+    [
+     
+     {
+     "id" : 0,
+     "imageURL" : "http://imga1.pic21.com/bizhi/131114/03835/s01.jpg",
+     "skipURL" : "http://fanyi.baidu.com/translate?aldtype=16047&query=&keyfrom=baidu&smartresult=dict&lang=auto2zh#auto/zh/",
+     "infor" : "百度翻译"
+     },
+  
+     {
+     "id" : 1,
+     "imageURL" : "http://imga1.pic21.com/bizhi/131114/03835/s06.jpg",
+     "skipURL" : "http://www.cocoachina.com",
+     "infor" : "cocoaChina"
+     },
+  
+     {
+     "id" : 2,
+     "imageURL" : "http://imga1.pic21.com/bizhi/131114/03835/s.jpg",
+     "skipURL" : "https://github.com",
+     "infor" : "gitHub"
+     },
+  
+     {
+     "id" : 3,
+     "imageURL" : "http://imga1.pic21.com/bizhi/140221/07742/s08.jpg",
+     "skipURL" : "http://www.sina.com.cn",
+     "infor" : "新浪首页"
+     },
+  
+     {
+     "id" : 4,
+     "imageURL" : "http://imga1.pic21.com/bizhi/140221/07742/s09.jpg",
+     "skipURL" : "http://music.163.com",
+     "infor" : "网页云音乐"
+     }
+],
+    "errorCode":0
+}

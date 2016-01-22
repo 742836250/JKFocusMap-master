@@ -1,15 +1,12 @@
 //
-//  ViewController.h
+//  TestVC.h
 //  JKFocusMap-master
 //
-//  Created by 王锐锋 on 16/1/3.
+//  Created by 王锐锋 on 16/1/14.
 //  Copyright © 2016年 jack_wang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface TypeFourthVC : UIViewController
 @end
-

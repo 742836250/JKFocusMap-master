@@ -1,25 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wq4-07-Bud">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="dmt-QY-MqS">
+            <objects>
+                <navigationController id="wq4-07-Bud" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YQa-9O-fbz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nJ4-ss-siR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Knp-Sw-Vz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-776" y="275.99999999999989"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="0sf-qP-g8V"/>
+                        <viewControllerLayoutGuide type="bottom" id="UeL-aG-l6j"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0366.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e7a-kp-dxJ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="listTBViewCellReuseIdentifier" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gIC-Ng-WRc">
+                                <rect key="frame" x="0.0" y="64" width="320" height="454"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="caJ-rZ-1fw"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="80x-aD-4TB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="e7a-kp-dxJ" secondAttribute="bottom" id="F7A-i2-gHg"/>
+                            <constraint firstItem="gIC-Ng-WRc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="LLt-PM-VHe"/>
+                            <constraint firstAttribute="trailing" secondItem="gIC-Ng-WRc" secondAttribute="trailing" id="ajo-NB-xy9"/>
+                            <constraint firstItem="e7a-kp-dxJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eUs-CN-uod"/>
+                            <constraint firstItem="e7a-kp-dxJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="mug-g9-Q3s"/>
+                            <constraint firstItem="UeL-aG-l6j" firstAttribute="top" secondItem="gIC-Ng-WRc" secondAttribute="bottom" constant="50" id="osh-0v-SfW"/>
+                            <constraint firstAttribute="trailing" secondItem="e7a-kp-dxJ" secondAttribute="trailing" id="svb-PD-AzI"/>
+                            <constraint firstItem="gIC-Ng-WRc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tII-KE-enG"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="M5I-Xe-H2O">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="设置" id="6zi-fO-zxF">
+                            <connections>
+                                <action selector="showSetView:" destination="BYZ-38-t0r" id="70j-Xw-uRG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="listTBView" destination="gIC-Ng-WRc" id="otn-6j-LYD"/>
+                        <outlet property="setBtn" destination="6zi-fO-zxF" id="Z37-VN-69f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-167" y="275"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_0366.jpg" width="1080" height="1920"/>
+    </resources>
 </document>
