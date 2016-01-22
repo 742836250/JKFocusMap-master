@@ -22,7 +22,7 @@
             </objects>
             <point key="canvasLocation" x="-776" y="275.99999999999989"/>
         </scene>
-        <!--View Controller-->
+        <!--JKFocusMap-master-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -59,8 +59,7 @@
                             <constraint firstItem="gIC-Ng-WRc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tII-KE-enG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="M5I-Xe-H2O">
-                        <nil key="title"/>
+                    <navigationItem key="navigationItem" title="JKFocusMap-master" id="M5I-Xe-H2O">
                         <barButtonItem key="leftBarButtonItem" title="设置" id="6zi-fO-zxF">
                             <connections>
                                 <action selector="showSetView:" destination="BYZ-38-t0r" id="70j-Xw-uRG"/>
