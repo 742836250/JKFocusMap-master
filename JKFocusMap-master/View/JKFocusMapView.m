@@ -145,7 +145,10 @@ static NSString *focusMapCollectionViewCellReuseIdentifier = @"focusMapCollectio
         if ([obj isKindOfClass:[JKTestData class]])
         {
             JKTestData *model = [self.items objectAtIndex:indexPath.row];
-            [cell.focusMapIamgeView sd_setImageWithURL:[NSURL URLWithString:model.imageURL] placeholderImage:[UIImage imageNamed:@"newsDefault.png"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            [cell.focusMapIamgeView sd_setImageWithURL:[NSURL URLWithString:model.imageURL]
+                                      placeholderImage:[UIImage imageNamed:@"newsDefault.png"]
+                                               options:SDWebImageProgressiveDownload
+                                             completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                 
                 if (!error)
                 {

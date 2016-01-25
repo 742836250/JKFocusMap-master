@@ -200,7 +200,7 @@ static NSString *listTBViewCellReuseIdentifier = @"listTBViewCellReuseIdentifier
 
 - (void)animatePlusBtnClick:(UIButton *)sender
 {
-    if (self.timerAnimateDuration<self.timerInterval)
+    if (self.timerAnimateDuration<self.timerInterval-0.2)
     {
         self.timerAnimateDuration+=0.2;
         self.setView.animateTF.text = [NSString stringWithFormat:@"%.2f",self.timerAnimateDuration];
