@@ -83,7 +83,7 @@ static NSString *listTBViewCellReuseIdentifier = @"listTBViewCellReuseIdentifier
     baseVC.showPageControl = self.showPageControl;
     baseVC.timerInterval = self.timerInterval;
     baseVC.timerAnimateDuration = self.timerAnimateDuration;
-    [self.navigationController pushViewController:testVC animated:YES];
+    [self.navigationController pushViewController:baseVC animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

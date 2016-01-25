@@ -44,6 +44,7 @@ static NSString *focusMapCollectionViewCellReuseIdentifier = @"focusMapCollectio
     if (self = [super initWithFrame:frame])
     {
         self.timerAnimateDuration = DEFAULT_TIMER_ANIMATE_DURATION;
+        self.timerInterval = DEFAULT_TIMERINTERVAL;
         self.items = [aItems mutableCopy];
         self.imageType = aImageType;
         self.imageType = aImageType;
@@ -87,8 +88,6 @@ static NSString *focusMapCollectionViewCellReuseIdentifier = @"focusMapCollectio
     self.items = [self handleDateSourceWith:self.items];
     [self.focusMapCollectionView reloadData];
     [self.focusMapCollectionView setContentOffset:CGPointMake(self.focusMapCollectionView.frame.size.width, 0) animated:NO];
-    self.timerInterval = DEFAULT_TIMERINTERVAL;
-   
 }
 - (NSMutableArray *)handleDateSourceWith:(NSArray *)aItems
 {
@@ -302,6 +301,10 @@ static NSString *focusMapCollectionViewCellReuseIdentifier = @"focusMapCollectio
 - (void)setTimerInterval:(NSTimeInterval)timerInterval
 {
     _timerInterval = timerInterval;
+    if (_timerInterval == 0)
+    {
+        _timerInterval = DEFAULT_TIMERINTERVAL;
+    }
     if (self.timer)
     {
         [self destroyTimer];

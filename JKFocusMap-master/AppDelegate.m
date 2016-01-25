@@ -19,7 +19,6 @@
     // Override point for customization after application launch.
    
     NSLog(@"%@", NSHomeDirectory());
-    
     return YES;
 }
 
