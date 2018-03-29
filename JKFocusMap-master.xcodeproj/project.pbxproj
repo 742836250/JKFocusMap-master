@@ -378,6 +378,7 @@
 				TargetAttributes = {
 					8F5E9FA01C38F3930035C87A = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = N48F6T4B7E;
 					};
 					8F5E9FB91C38F3940035C87A = {
 						CreatedOnToolsVersion = 7.2;
@@ -657,6 +658,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N48F6T4B7E;
 				INFOPLIST_FILE = "JKFocusMap-master/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -673,6 +675,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N48F6T4B7E;
 				INFOPLIST_FILE = "JKFocusMap-master/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
