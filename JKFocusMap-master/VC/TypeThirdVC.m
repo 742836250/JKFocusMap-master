@@ -7,7 +7,7 @@
 //
 
 #import "TypeThirdVC.h"
-
+#import "TextCell.h"
 @interface TypeThirdVC ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *textTBView;
@@ -22,7 +22,7 @@ static NSString *textTBViewCellReuseIdentifier = @"textTBViewCellReuseIdentifier
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.textTBView registerClass:[UITableViewCell class] forCellReuseIdentifier:textTBViewCellReuseIdentifier];
+    [self.textTBView registerClass:[TextCell class] forCellReuseIdentifier:textTBViewCellReuseIdentifier];
 }
 #pragma mark UITableView Method
 
@@ -38,7 +38,7 @@ static NSString *textTBViewCellReuseIdentifier = @"textTBViewCellReuseIdentifier
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:textTBViewCellReuseIdentifier forIndexPath:indexPath];
+    TextCell *cell = [tableView dequeueReusableCellWithIdentifier:textTBViewCellReuseIdentifier forIndexPath:indexPath];
     cell.textLabel.text = [NSString stringWithFormat:@"section %ld index %ld",(long)indexPath.section,(long)indexPath.row];
     return cell;
 }

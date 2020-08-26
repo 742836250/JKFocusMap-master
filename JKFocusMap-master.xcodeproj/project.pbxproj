@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F1726C72080B4F800AD5CE9 /* TextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1726C62080B4F800AD5CE9 /* TextCell.m */; };
 		8F5E9FA61C38F3930035C87A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5E9FA51C38F3930035C87A /* main.m */; };
 		8F5E9FA91C38F3930035C87A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5E9FA81C38F3930035C87A /* AppDelegate.m */; };
 		8F5E9FAF1C38F3930035C87A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5E9FAD1C38F3930035C87A /* Main.storyboard */; };
@@ -64,6 +65,8 @@
 
 /* Begin PBXFileReference section */
 		2431A9E7254A63DD42F4948F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8F1726C52080B4F800AD5CE9 /* TextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextCell.h; sourceTree = "<group>"; };
+		8F1726C62080B4F800AD5CE9 /* TextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextCell.m; sourceTree = "<group>"; };
 		8F5E9FA11C38F3930035C87A /* JKFocusMap-master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JKFocusMap-master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5E9FA51C38F3930035C87A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8F5E9FA71C38F3930035C87A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -292,6 +295,8 @@
 				8FA16C031C48F534007700C3 /* TypeThirdVC.xib */,
 				8FA16BAC1C48A850007700C3 /* JKWebViewController.h */,
 				8FA16BAD1C48A850007700C3 /* JKWebViewController.m */,
+				8F1726C52080B4F800AD5CE9 /* TextCell.h */,
+				8F1726C62080B4F800AD5CE9 /* TextCell.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -512,6 +517,7 @@
 				8F844E5E1C51D6AA00BFEBA9 /* JKFocusMapSetView.m in Sources */,
 				8F5E9FA61C38F3930035C87A /* main.m in Sources */,
 				8FA16BB81C48A850007700C3 /* JKTestModel.m in Sources */,
+				8F1726C72080B4F800AD5CE9 /* TextCell.m in Sources */,
 				8FA16C041C48F534007700C3 /* TypeThirdVC.m in Sources */,
 				8FA16BB71C48A850007700C3 /* JKTestData.m in Sources */,
 				8FA16BFA1C48F4C7007700C3 /* TypeSecondVC.m in Sources */,
